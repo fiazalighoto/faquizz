@@ -240,9 +240,12 @@ const quizzes = {
   ["How many sides does a hexagon have?", ["5", "6", "7", "8"], 1],
   ["Which vitamin is produced when exposed to sunlight?", ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"], 3],
   ["Which country is known as the Land of the Rising Sun?", ["China", "Japan", "Thailand", "Vietnam"], 1],
-  ["What is the process by which plants make food?", ["Digestion", "Respiration", "Photosynthesis", "Fermentation"], 2],
-
-  ["Who wrote 'Hamlet'?", ["Charles Dickens", "William Shakespeare", "Leo Tolstoy", "Jane Austen"], 1],
+  ["What is the process by which plants make food?", ["Digestion", "Respiration", "Photosynthesis", "Fermentation"], 2]
+  },
+  "Look What You Can Do": {
+    time: 1800,
+    questions: [
+      ["Who wrote 'Hamlet'?", ["Charles Dickens", "William Shakespeare", "Leo Tolstoy", "Jane Austen"], 1],
   ["Which part of the brain controls balance?", ["Cerebrum", "Cerebellum", "Medulla", "Spinal cord"], 1],
   ["What is the chemical symbol of gold?", ["Ag", "Au", "Pb", "Gd"], 1],
   ["Which country gifted the Statue of Liberty to the USA?", ["UK", "Germany", "France", "Canada"], 2],
@@ -297,12 +300,6 @@ const quizzes = {
   ["How many hours in a day?", ["24", "12", "36", "48"], 0],
   ["What do we call the story of a person's life written by someone else?", ["Biography", "Autobiography", "Fiction", "Drama"], 0]
     ]
-  },
-  "Look What You Can Do": {
-    time: 1800,
-    questions: [
-      ["Who wrote 'Hamlet'?", ["Milton", "Shakespeare", "Wordsworth", "Byron"], 1],
-      ["Which planet is known as the Red Planet?", ["Earth", "Mars", "Venus", "Jupiter"], 1]
     ]
   },
   "Are You Smart?": {
