@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQUIZ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Login Section -->
+  <div id="login-section" class="center">
+    <h1>Welcome to FAQUIZ</h1>
+    <input type="text" id="username" placeholder="Your Name" />
+    <input type="text" id="phone" placeholder="03XXXXXXXXX" />
+    <input type="password" id="password" placeholder="Password (1111)" />
+    <button id="loginBtn">Login</button>
+    <p id="login-error" class="error"></p>
+  </div>
+
+  <!-- Quiz Selection Section -->
+  <div id="quiz-selection" class="center hidden">
+    <h2>Select Your Quiz</h2>
+    <button onclick="startQuiz('Science')">Science</button>
+    <button onclick="startQuiz('Math')">Math</button>
+    <button onclick="startQuiz('English')">English</button>
+    <button onclick="startQuiz('General Knowledge')">General Knowledge</button>
+    <button onclick="showQuickQuizOptions()">QuickQuiz</button>
+  </div>
+
+  <!-- QuickQuiz Options -->
+  <div id="quickquiz-options" class="center hidden">
+    <h2>QuickQuiz Tests</h2>
+    <button onclick="startQuiz('Test Yourself')">Test Yourself</button>
+    <button onclick="startQuiz('Look What You Can Do')">Look What You Can Do</button>
+    <button onclick="requestCode('Are You Smart?', '45102')">Are You Smart?</button>
+    <button onclick="requestCode('Let\'s See What You\'ve Got', '02052')">Let's See What You've Got</button>
+    <button onclick="requestCode('Only for Pros', '02009')">Only for Pros</button>
+    <button onclick="document.getElementById('quiz-selection').classList.remove('hidden'); this.parentElement.classList.add('hidden');">&larr; Back</button>
+  </div>
+
+  <!-- Quiz Container -->
+  <div id="quiz-container" class="center hidden">
+    <h2 id="quiz-title">Quiz</h2>
+    <p id="timer">Time Left: 00:00</p>
+    <div id="question-box"></div>
+    <button onclick="prevQuestion()">Previous</button>
+    <button onclick="showReviewBox()">Submit</button>
+  </div>
+
+  <!-- Review Section -->
+  <div id="review-section" class="center hidden">
+    <h3>Please confirm submission:</h3>
+    <textarea placeholder="Write any feedback (optional)..."></textarea><br>
+    <button onclick="submitReview()">Submit Quiz</button>
+  </div>
+
+  <!-- Result Section -->
+  <div id="result-section" class="center hidden">
+    <h2 id="final-score"></h2>
+    <div id="summary"></div>
+  </div>
+
+  <footer class="center">
+    <p>&copy; All Rights Reserved to FAQUIZ</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
